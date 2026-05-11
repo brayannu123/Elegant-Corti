@@ -81,11 +81,6 @@ const Services = () => {
                 <p className="text-gray-300 text-sm font-light leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 translate-y-4 group-hover:translate-y-0">
                   {service.description}
                 </p>
-
-                <div className="mt-8 pt-8 border-t border-white/10 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="text-[10px] uppercase tracking-widest font-bold">Ver más</span>
-                  <div className="w-8 h-[1px] bg-elegant-gold" />
-                </div>
               </div>
             </motion.div>
           ))}
