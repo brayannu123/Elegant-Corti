@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
 import { whatsappLink } from '../utils/whatsapp';
+import { publicAsset } from '../utils/assets';
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
@@ -40,7 +41,7 @@ const Navbar = () => {
           className="flex items-center gap-3 cursor-pointer group"
           aria-label="Ir al inicio de Elegant Corti"
         >
-          <img src="/logo.png" alt="Elegant Corti Logo" className="h-12 md:h-16 w-auto object-contain" />
+          <img src={publicAsset('logo.png')} alt="Elegant Corti Logo" className="h-12 md:h-16 w-auto object-contain" />
           <div className="flex flex-col leading-none">
             <span className="text-xl md:text-2xl font-serif font-bold tracking-tighter group-hover:text-elegant-gold transition-colors">
               ELEGANT <span className="text-elegant-gold italic">CORTI</span>

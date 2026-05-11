@@ -1,38 +1,41 @@
 # Elegant Corti
 
-Landing page para **Elegant Corti**, una vitrina digital de cortinas y persianas a medida. El objetivo del sitio es mostrar servicios, catálogo visual, galería y datos de contacto, llevando la conversión principal a WhatsApp.
+Landing page para **Elegant Corti**, una vitrina digital enfocada en cortinas y persianas a medida. El sitio presenta los servicios, el catalogo visual, la galeria de referencia y los canales de contacto de la marca, con una conversion principal orientada a WhatsApp.
 
-## Estado Actual
+## Objetivo Del Proyecto
 
-El proyecto ya fue revisado y ajustado con enfoque de presentación comercial:
+El objetivo principal es ofrecer una experiencia elegante, clara y responsive para que el visitante pueda:
 
-- Se corrigieron textos con caracteres dañados por codificación.
-- Se quitaron precios del catálogo para evitar confusión de moneda.
-- Se quitó la sección de testimonios.
-- Se quitó el formulario funcional/decorativo de contacto.
-- Se quitaron newsletter y enlaces sociales falsos.
-- Se actualizó el contacto a:
-  - WhatsApp / teléfono: `322 906 4201`
-  - Email: `mfna24brayan@gmail.com`
-- Se agregaron CTAs reales hacia WhatsApp con mensajes pre-cargados.
-- Se cambió el build de `terser` a `esbuild`.
-- Se eliminó contenido sobrante del template de React.
-- Se agregó animación tipo escritura en el título del Hero:
-  - `Transformamos tus`
-  - `Espacios en Arte`
+- Conocer la propuesta visual de Elegant Corti.
+- Explorar servicios de cortinas, persianas e instalacion.
+- Ver una seleccion de productos y referencias visuales.
+- Contactar rapidamente por WhatsApp.
+- Consultar datos de telefono, correo y ubicaciones.
 
-## Tecnologías Usadas
+## Caracteristicas Principales
 
-- **React 18**: construcción de la interfaz por componentes.
-- **Vite**: servidor de desarrollo y build del proyecto.
-- **Tailwind CSS**: estilos, responsive design y utilidades visuales.
+- Landing page de una sola pagina con navegacion por secciones.
+- Hero visual con imagen de fondo y animacion tipo escritura.
+- Botones de accion conectados a WhatsApp con mensajes pre-cargados.
+- Catalogo visual sin precios visibles, orientado a cotizacion directa.
+- Galeria tipo masonry para mostrar ambientes e inspiracion.
+- Seccion de contacto enfocada en WhatsApp, llamada, correo y ubicaciones.
+- Footer con enlaces internos, horarios, contacto y CTA de asesoria.
+- Diseno responsive para movil, tablet y escritorio.
+- Identidad visual oscura con detalles dorados y vino tinto.
+
+## Tecnologias Usadas
+
+- **React 18**: construccion de la interfaz por componentes.
+- **Vite**: servidor de desarrollo y generacion del build.
+- **Tailwind CSS**: estilos, layout responsive y utilidades visuales.
 - **Framer Motion**: animaciones de entrada, hover y transiciones.
-- **React Icons**: iconos de WhatsApp, teléfono, correo, menú y otros elementos.
-- **PostCSS / Autoprefixer**: procesamiento CSS para compatibilidad.
+- **React Icons**: iconos de WhatsApp, telefono, correo, ubicacion y menu.
+- **PostCSS / Autoprefixer**: procesamiento CSS y compatibilidad.
 
-## Librerías Principales
+## Librerias Del Proyecto
 
-Dependencias de producción:
+Dependencias principales:
 
 - `react`
 - `react-dom`
@@ -50,76 +53,74 @@ Dependencias de desarrollo:
 - `postcss`
 - `autoprefixer`
 
-Nota: `lucide-react`, `clsx` y `tailwind-merge` están instaladas, pero actualmente no son necesarias en el código principal revisado. Se pueden mantener o limpiar más adelante.
-
 ## Estructura Del Proyecto
 
 ```txt
 Elegant corti/
-├─ public/
-│  ├─ logo.png
-│  ├─ hero_curtains_1778263576711.png
-│  ├─ blackout_curtains_1778263646696.png
-│  └─ sheer_elegance_curtains_1778263662180.png
-├─ src/
-│  ├─ components/
-│  │  ├─ Navbar.jsx
-│  │  ├─ Hero.jsx
-│  │  ├─ Services.jsx
-│  │  ├─ Catalog.jsx
-│  │  ├─ Gallery.jsx
-│  │  ├─ Contact.jsx
-│  │  ├─ Footer.jsx
-│  │  └─ FloatingWhatsApp.jsx
-│  ├─ utils/
-│  │  └─ whatsapp.js
-│  ├─ App.jsx
-│  ├─ index.css
-│  └─ main.jsx
-├─ index.html
-├─ package.json
-├─ tailwind.config.js
-├─ postcss.config.js
-├─ vite.config.js
-├─ ANALISIS_PROYECTO.txt
-└─ README.md
+|-- public/
+|   |-- logo.png
+|   |-- hero_curtains_1778263576711.png
+|   |-- blackout_curtains_1778263646696.png
+|   `-- sheer_elegance_curtains_1778263662180.png
+|-- src/
+|   |-- components/
+|   |   |-- Navbar.jsx
+|   |   |-- Hero.jsx
+|   |   |-- Services.jsx
+|   |   |-- Catalog.jsx
+|   |   |-- Gallery.jsx
+|   |   |-- Contact.jsx
+|   |   |-- Footer.jsx
+|   |   `-- FloatingWhatsApp.jsx
+|   |-- utils/
+|   |   `-- whatsapp.js
+|   |-- App.jsx
+|   |-- index.css
+|   `-- main.jsx
+|-- index.html
+|-- package.json
+|-- tailwind.config.js
+|-- postcss.config.js
+|-- vite.config.js
+|-- ANALISIS_PROYECTO.txt
+`-- README.md
 ```
 
 ## Componentes
 
 ### `Navbar.jsx`
 
-Menú superior fijo con navegación por secciones:
+Menu superior fijo con navegacion interna hacia las secciones principales:
 
 - Inicio
 - Servicios
-- Catálogo
-- Galería
+- Catalogo
+- Galeria
 - Contacto
 
-Incluye botón **Cotizar Ahora** conectado a WhatsApp.
+Incluye un CTA de cotizacion conectado a WhatsApp.
 
 ### `Hero.jsx`
 
-Primera pantalla del sitio. Contiene:
+Primera pantalla del sitio. Incluye imagen de fondo, texto principal, botones de accion y animacion tipo escritura para el mensaje:
 
-- Imagen de fondo.
-- Texto principal con animación tipo escritura.
-- Botón para ir al catálogo.
-- Botón directo a WhatsApp.
+```txt
+Transformamos tus
+Espacios en Arte
+```
 
 ### `Services.jsx`
 
-Muestra los servicios principales:
+Presenta los servicios principales de la marca:
 
 - Cortinas Blackout
 - Sheer Elegance
 - Persianas Modernas
-- Instalación Especializada
+- Instalacion Especializada
 
 ### `Catalog.jsx`
 
-Catálogo visual sin precios. Cada producto tiene botón para cotizar por WhatsApp.
+Catalogo visual de productos y estilos. Cada producto dirige a WhatsApp para solicitar informacion o cotizacion.
 
 Productos actuales:
 
@@ -132,36 +133,29 @@ Productos actuales:
 
 ### `Gallery.jsx`
 
-Galería visual tipo masonry con imágenes de referencia. Lo ideal a futuro es reemplazarlas por fotos reales de trabajos de Elegant Corti.
+Galeria visual tipo masonry para mostrar ambientes, inspiracion y referencias de instalacion.
 
 ### `Contact.jsx`
 
-Sección informativa y comercial. No usa formulario. Contiene:
+Seccion de contacto orientada a conversion directa. Incluye:
 
-- WhatsApp
-- Llamada
-- Correo
-- Ubicaciones enlazadas a Google Maps
-- CTA de asesoría
+- Boton de WhatsApp.
+- Boton de llamada.
+- Correo electronico.
+- Ubicaciones enlazadas a Google Maps.
+- CTA para agendar asesoria.
 
 ### `Footer.jsx`
 
-Cierre del sitio con:
-
-- Descripción corta de la marca.
-- Acceso a WhatsApp.
-- Enlaces internos.
-- Horarios.
-- Correo y teléfono.
-- CTA para agendar asesoría.
+Cierre del sitio con descripcion de la marca, enlaces internos, horarios, datos de contacto y acceso a WhatsApp.
 
 ### `FloatingWhatsApp.jsx`
 
-Botón flotante fijo de WhatsApp con mensaje pre-cargado.
+Boton flotante de WhatsApp visible durante la navegacion para facilitar el contacto rapido.
 
-## Utilidad De WhatsApp
+## WhatsApp
 
-El archivo `src/utils/whatsapp.js` centraliza el número y la generación de enlaces:
+La utilidad `src/utils/whatsapp.js` centraliza el numero y la generacion de enlaces:
 
 ```js
 export const WA_NUMBER = '573229064201';
@@ -171,7 +165,38 @@ export function whatsappLink(message) {
 }
 ```
 
-Esto permite cambiar el número una sola vez si se necesita actualizar en el futuro.
+Esto permite actualizar el numero o reutilizar mensajes de contacto sin repetir logica en cada componente.
+
+## Contacto Configurado
+
+- WhatsApp / telefono: `322 906 4201`
+- Numero interno para enlaces: `573229064201`
+- Email: `mfna24brayan@gmail.com`
+
+## Diseno Visual
+
+La interfaz esta construida con una estetica sobria y elegante:
+
+- Fondo negro.
+- Detalles dorados.
+- Acentos vino tinto.
+- Titulos con tipografia serif.
+- Texto general con tipografia sans.
+- Imagenes grandes y contrastadas.
+- Animaciones suaves con Framer Motion.
+
+Colores personalizados definidos en `tailwind.config.js`:
+
+```js
+elegant: {
+  black: '#050505',
+  wine: '#4a0404',
+  gold: '#D4AF37',
+  'gold-light': '#F1D592',
+  gray: '#1A1A1A',
+  white: '#FFFFFF',
+}
+```
 
 ## Comandos
 
@@ -187,7 +212,7 @@ Levantar servidor de desarrollo:
 npm.cmd run dev
 ```
 
-Generar build de producción:
+Generar build de produccion:
 
 ```bash
 npm.cmd run build
@@ -199,17 +224,24 @@ Previsualizar build:
 npm.cmd run preview
 ```
 
-En PowerShell puede fallar `npm run ...` por política de ejecución de scripts. En ese caso usar `npm.cmd`, por ejemplo:
+Publicar en GitHub Pages:
+
+```bash
+npm.cmd run deploy
+```
+
+En PowerShell, si `npm run ...` falla por politica de ejecucion de scripts, usar `npm.cmd`:
 
 ```bash
 npm.cmd run dev
 ```
 
-## Configuración De Build
+## Build
 
-En `vite.config.js` se usa:
+La configuracion de produccion se encuentra en `vite.config.js`:
 
 ```js
+base: '/Elegant-Corti/',
 build: {
   outDir: 'dist',
   minify: 'esbuild',
@@ -217,53 +249,75 @@ build: {
 }
 ```
 
-Se usa `esbuild` porque viene incluido con Vite y evita depender de `terser`.
+`esbuild` viene integrado con Vite y permite generar el build sin dependencias adicionales de minificacion.
 
-## Diseño Visual
+## Despliegue En GitHub Pages
 
-La identidad visual usa:
+Repositorio configurado:
 
-- Fondo negro elegante.
-- Detalles en dorado.
-- Color vino tinto para acentos.
-- Tipografía serif para títulos.
-- Tipografía sans para textos generales.
-- Tarjetas con imágenes grandes.
-- Animaciones suaves con Framer Motion.
-
-Colores definidos en `tailwind.config.js`:
-
-```js
-elegant: {
-  black: '#050505',
-  wine: '#4a0404',
-  gold: '#D4AF37',
-  'gold-light': '#F1D592',
-  gray: '#1A1A1A',
-  white: '#FFFFFF',
-}
+```txt
+https://github.com/brayannu123/Elegant-Corti.git
 ```
 
-## Contacto Configurado
+URL esperada del sitio publicado:
 
-- WhatsApp: `322 906 4201`
-- WhatsApp link interno: `573229064201`
-- Email: `mfna24brayan@gmail.com`
+```txt
+https://brayannu123.github.io/Elegant-Corti/
+```
 
-## Pendientes Recomendados
+Configuraciones necesarias ya incluidas:
 
-- Reemplazar imágenes externas de Unsplash por fotos reales del negocio.
-- Revisar si `lucide-react`, `clsx` y `tailwind-merge` se deben eliminar si no se usan.
-- Actualizar `ANALISIS_PROYECTO.txt` si se quiere que refleje solo el estado final y no el diagnóstico inicial.
-- Ejecutar `npm.cmd run build` después de cada bloque grande de cambios.
-- Revisar visualmente en móvil, tablet y desktop.
+- `vite.config.js` usa `base: '/Elegant-Corti/'`.
+- `package.json` incluye `homepage`.
+- `package.json` incluye `predeploy` y `deploy`.
+- `gh-pages` esta instalado como dependencia de desarrollo.
+- `.gitignore` evita subir `node_modules`, `dist` y archivos de entorno.
+
+Flujo recomendado para publicar cambios:
+
+```bash
+git add .
+git commit -m "actualizar landing elegant corti"
+git push
+npm.cmd run deploy
+```
+
+Despues del primer deploy, en GitHub se debe revisar:
+
+1. Entrar al repositorio en GitHub.
+2. Ir a `Settings`.
+3. Abrir `Pages`.
+4. Seleccionar la rama `gh-pages`.
+5. Seleccionar carpeta `/ (root)`.
+6. Guardar la configuracion.
+
+GitHub puede tardar unos minutos en mostrar la version publicada.
+
+## SEO Basico
+
+El archivo `index.html` incluye:
+
+- Idioma principal en espanol.
+- Titulo del sitio.
+- Meta description.
+- Favicon con `logo.png`.
+- Etiquetas Open Graph basicas.
+- Twitter card.
+
+## Recomendaciones Futuras
+
+- Reemplazar imagenes externas por fotografias reales del negocio.
+- Optimizar imagenes para web antes de publicar.
+- Revisar visualmente la experiencia en movil, tablet y escritorio.
+- Ejecutar `npm.cmd run build` antes de desplegar.
+- Mantener actualizado el correo y numero de WhatsApp en `src/utils/whatsapp.js` y en la seccion de contacto.
 
 ## Nota Sobre `dist`
 
-La carpeta `dist/` contiene el build generado. Si se cambia código en `src/`, hay que volver a ejecutar:
+La carpeta `dist/` contiene la version generada para produccion. Cuando se cambie codigo en `src/`, se debe volver a ejecutar:
 
 ```bash
 npm.cmd run build
 ```
 
-para que `dist/` quede actualizado.
+para actualizar los archivos finales.

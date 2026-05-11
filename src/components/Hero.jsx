@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 import { HiArrowRight } from 'react-icons/hi';
 import { whatsappLink } from '../utils/whatsapp';
+import { publicAsset } from '../utils/assets';
 
 const titleLine = 'Transformamos tus';
 const titleHighlight = 'Espacios';
@@ -37,7 +38,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
-          style={{ backgroundImage: `url('/hero_curtains_1778263576711.png')` }}
+          style={{ backgroundImage: `url('${publicAsset('hero_curtains_1778263576711.png')}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-elegant-black via-elegant-black/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-elegant-black via-transparent to-transparent opacity-80" />

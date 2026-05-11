@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { HiOutlineColorSwatch, HiOutlineHome, HiOutlineShieldCheck, HiOutlineSparkles } from 'react-icons/hi';
+import { publicAsset } from '../utils/assets';
 
 const services = [
   {
     title: 'Cortinas Blackout',
     description: 'Privacidad total y bloqueo de luz para un descanso perfecto.',
     icon: <HiOutlineShieldCheck />,
-    image: '/blackout_curtains_1778263646696.png',
+    image: publicAsset('blackout_curtains_1778263646696.png'),
   },
   {
     title: 'Sheer Elegance',
     description: 'El equilibrio ideal entre iluminación natural y privacidad.',
     icon: <HiOutlineSparkles />,
-    image: '/sheer_elegance_curtains_1778263662180.png',
+    image: publicAsset('sheer_elegance_curtains_1778263662180.png'),
   },
   {
     title: 'Persianas Modernas',
