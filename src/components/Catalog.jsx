@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { whatsappLink } from '../utils/whatsapp';
+import { publicAsset } from '../utils/assets';
 
 const products = [
-  { id: 1, name: 'Terciopelo Real', category: 'Seleccionado', img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600' },
-  { id: 2, name: 'Seda Horizonte', category: 'Lujo', img: 'https://images.unsplash.com/photo-1574739782594-db4ead022697?auto=format&fit=crop&q=80&w=600' },
-  { id: 3, name: 'Sheer Dorado', category: 'Elegante', img: 'https://images.unsplash.com/photo-1595814433015-e6f5cd69614e?auto=format&fit=crop&q=80&w=600' },
-  { id: 4, name: 'Negro Obsidiana', category: 'Minimalista', img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600' },
-  { id: 5, name: 'Lino Natural', category: 'Natural', img: 'https://images.unsplash.com/photo-1574739782594-db4ead022697?auto=format&fit=crop&q=80&w=600' },
-  { id: 6, name: 'Vino Royal', category: 'Exclusivo', img: 'https://images.unsplash.com/photo-1595814433015-e6f5cd69614e?auto=format&fit=crop&q=80&w=600' },
+  { id: 1, name: 'Terciopelo Real', category: 'Seleccionado', img: publicAsset('hero_curtains_1778263576711.png') },
+  { id: 2, name: 'Seda Horizonte', category: 'Lujo', img: publicAsset('sheer_elegance_curtains_1778263662180.png') },
+  { id: 3, name: 'Sheer Dorado', category: 'Elegante', img: publicAsset('sheer_elegance_curtains_1778263662180.png') },
+  { id: 4, name: 'Negro Obsidiana', category: 'Minimalista', img: publicAsset('blackout_curtains_1778263646696.png') },
+  { id: 5, name: 'Lino Natural', category: 'Natural', img: publicAsset('hero_curtains_1778263576711.png') },
+  { id: 6, name: 'Vino Royal', category: 'Exclusivo', img: publicAsset('blackout_curtains_1778263646696.png') },
 ];
 
 const Catalog = () => {
@@ -35,6 +36,7 @@ const Catalog = () => {
               key={product.id}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ y: -8 }}
               transition={{ delay: index * 0.1 }}
               className="group"
             >

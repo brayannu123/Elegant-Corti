@@ -20,13 +20,13 @@ const services = [
     title: 'Persianas Modernas',
     description: 'Diseños minimalistas y funcionales para oficinas y hogares.',
     icon: <HiOutlineColorSwatch />,
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800',
+    image: publicAsset('hero_curtains_1778263576711.png'),
   },
   {
     title: 'Instalación Especializada',
     description: 'Personal experto garantizando acabados impecables.',
     icon: <HiOutlineHome />,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800',
+    image: publicAsset('blackout_curtains_1778263646696.png'),
   },
 ];
 

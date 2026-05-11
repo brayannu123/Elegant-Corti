@@ -36,9 +36,12 @@ const Hero = () => {
   return (
     <section id="inicio" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div
+        <motion.div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
           style={{ backgroundImage: `url('${publicAsset('hero_curtains_1778263576711.png')}')` }}
+          initial={{ scale: 1.04 }}
+          animate={{ scale: 1.1 }}
+          transition={{ duration: 12, ease: 'easeOut' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-elegant-black via-elegant-black/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-elegant-black via-transparent to-transparent opacity-80" />
